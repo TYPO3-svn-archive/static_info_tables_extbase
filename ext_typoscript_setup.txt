@@ -27,7 +27,7 @@ plugin.tx_staticinfotablesextbase {
 			}
 			Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone {
 				mapping {
-					tableName = static_countriy_zones
+					tableName = static_country_zones
 					columns {
 						zn_country_iso_2.mapOnProperty = countryIsoCodeA2
 						zn_country_iso_3.mapOnProperty = countryIsoCodeA3
