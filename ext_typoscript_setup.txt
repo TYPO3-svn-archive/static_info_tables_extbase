@@ -1,4 +1,4 @@
-plugin.tx_staticinfotablesextbase {
+config.tx_extbase {
 	persistence {
 		classes {
 			Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry {
