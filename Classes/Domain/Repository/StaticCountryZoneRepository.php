@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011 Armin Ruediger Vieweg <info@professorweb.de>
+*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
 *
 *  All rights reserved
 *
@@ -36,7 +36,7 @@ class Tx_StaticInfoTablesExtbase_Domain_Repository_StaticCountryZoneRepository e
 	 *
 	 * @param Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry $country
 	 *
-	 * @return void
+	 * @return Tx_Extbase_Persistence_QueryResultInterface|array
 	 */
 	public function findByCountry(Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry $country) {
 		$query = $this->createQuery();

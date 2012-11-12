@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011 Armin Ruediger Vieweg <info@professorweb.de>
+*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
 *
 *  All rights reserved
 *
@@ -71,13 +71,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	protected $constructedLanguage = FALSE;
 
 	/**
+	 * Sets the TYPO3 code.
+	 *
 	 * @param string $typo3Code
+	 *
+	 * @return void
 	 */
 	public function setTypo3Code($typo3Code) {
 		$this->typo3Code = $typo3Code;
 	}
 
 	/**
+	 * Gets the TYPO3 code.
+	 *
 	 * @return string
 	 */
 	public function getTypo3Code() {
@@ -85,13 +91,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the collating locale.
+	 *
 	 * @param string $collatingLocale
+	 *
+	 * @return void
 	 */
 	public function setCollatingLocale($collatingLocale) {
 		$this->collatingLocale = $collatingLocale;
 	}
 
 	/**
+	 * Gets the collating locale.
+	 *
 	 * @return string
 	 */
 	public function getCollatingLocale() {
@@ -99,13 +111,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets whether this is a constructed language.
+	 *
 	 * @param boolean $constructedLanguage
+	 *
+	 * @return void
 	 */
 	public function setConstructedLanguage($constructedLanguage) {
 		$this->constructedLanguage = $constructedLanguage;
 	}
 
 	/**
+	 * Gets whether this is a constructed language.
+	 *
 	 * @return boolean
 	 */
 	public function getConstructedLanguage() {
@@ -113,7 +131,10 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
-	 * Synonym for getConstructedLanguage method
+	 * Gets whether this is a constructed language.
+	 *
+	 * This method is a synonym for the getConstructedLanguage method.
+	 *
 	 * @return boolean
 	 */
 	public function isConstructedLanguage() {
@@ -121,13 +142,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the ISO code.
+	 *
 	 * @param string $isoCode
+	 *
+	 * @return void
 	 */
 	public function setIsoCode($isoCode) {
 		$this->isoCode = $isoCode;
 	}
 
 	/**
+	 * Gets the ISO code.
+	 *
 	 * @return string
 	 */
 	public function getIsoCode() {
@@ -135,13 +162,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the country ISO code.
+	 *
 	 * @param string $countryIsoCode
+	 *
+	 * @return void
 	 */
 	public function setCountryIsoCode($countryIsoCode) {
 		$this->countryIsoCode = $countryIsoCode;
 	}
 
 	/**
+	 * Gets the country ISO code.
+	 *
 	 * @return string
 	 */
 	public function getCountryIsoCode() {
@@ -149,13 +182,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the local name.
+	 *
 	 * @param string $localName
+	 *
+	 * @return void
 	 */
 	public function setLocalName($localName) {
 		$this->localName = $localName;
 	}
 
 	/**
+	 * Gets the local name.
+	 *
 	 * @return string
 	 */
 	public function getLocalName() {
@@ -163,13 +202,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the name.
+	 *
 	 * @param string $name
+	 *
+	 * @return void
 	 */
 	public function setName($name) {
 		$this->name = $name;
 	}
 
 	/**
+	 * Gets the name.
+	 *
 	 * @return string
 	 */
 	public function getName() {
@@ -177,13 +222,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets whether this is a sacred language.
+	 *
 	 * @param boolean $sacredLanguage
+	 *
+	 * @return void
 	 */
 	public function setSacredLanguage($sacredLanguage) {
 		$this->sacredLanguage = $sacredLanguage;
 	}
 
 	/**
+	 * Gets whether this is a sacred language.
+	 *
 	 * @return boolean
 	 */
 	public function getSacredLanguage() {
@@ -191,7 +242,10 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticLanguage extends Tx_Extbase_
 	}
 
 	/**
-	 * Synonym for getSacredLanguage method
+	 * Sets whether this is a sacred language.
+	 *
+	 * This method is a synonym for the getSacredLanguage method.
+	 *
 	 * @return boolean
 	 */
 	public function isSacredLanguage() {

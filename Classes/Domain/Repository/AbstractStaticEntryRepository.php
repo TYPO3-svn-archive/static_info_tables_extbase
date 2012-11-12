@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011 Armin Ruediger Vieweg <info@professorweb.de>
+*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
 *
 *  All rights reserved
 *
@@ -33,10 +33,10 @@ abstract class Tx_StaticInfoTablesExtbase_Domain_Repository_AbstractStaticEntryR
 	/**
 	 * Find all ordered by given field name
 	 *
-	 * @param $fieldName field name to order by
+	 * @param string $fieldName field name to order by
 	 * @param string $orderDirection may be "asc" or "desc". Default is "asc".
 	 *
-	 * @return array|Tx_Extbase_Persistence_QueryResultInterface All entries ordered by given field name
+	 * @return Tx_Extbase_Persistence_QueryResultInterface|array all entries ordered by $fieldName
 	 */
 	public function findAllOrderedBy($fieldName, $orderDirection = 'asc') {
 		$query = $this->createQuery();

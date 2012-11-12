@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011 Armin Ruediger Vieweg <info@professorweb.de>
+*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
 *
 *  All rights reserved
 *
@@ -46,13 +46,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticTerritory extends Tx_Extbase
 	protected $parentTerritoryCode = 0;
 
 	/**
+	 * Sets the territory code of the parent.
+	 *
 	 * @param integer $parentTerritoryCode
+	 *
+	 * @return void
 	 */
 	public function setParentTerritoryCode($parentTerritoryCode) {
 		$this->parentTerritoryCode = $parentTerritoryCode;
 	}
 
 	/**
+	 * Returns the territory code of the parent.
+	 *
 	 * @return integer
 	 */
 	public function getParentTerritoryCode() {
@@ -60,13 +66,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticTerritory extends Tx_Extbase
 	}
 
 	/**
+	 * Sets the ISO code.
+	 *
 	 * @param integer $isoCode
+	 *
+	 * @return void
 	 */
 	public function setIsoCode($isoCode) {
 		$this->isoCode = $isoCode;
 	}
 
 	/**
+	 * Returns the ISO code.
+	 *
 	 * @return integer
 	 */
 	public function getIsoCode() {
@@ -74,13 +86,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticTerritory extends Tx_Extbase
 	}
 
 	/**
+	 * Sets the name.
+	 *
 	 * @param string $name
+	 *
+	 * @return void
 	 */
 	public function setName($name) {
 		$this->name = $name;
 	}
 
 	/**
+	 * Returns the name.
+	 *
 	 * @return string
 	 */
 	public function getName() {

@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011 Armin Ruediger Vieweg <info@professorweb.de>
+*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
 *
 *  All rights reserved
 *
@@ -93,13 +93,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	protected $divisor = 0;
 
 	/**
+	 * Sets the thousands point/separator.
+	 *
 	 * @param string $thousandsPoint
+	 *
+	 * @return void
 	 */
 	public function setThousandsPoint($thousandsPoint) {
 		$this->thousandsPoint = $thousandsPoint;
 	}
 
 	/**
+	 * Gets the thousands point/separator.
+	 *
 	 * @return string
 	 */
 	public function getThousandsPoint() {
@@ -107,27 +113,39 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * @param int $divisor
+	 * Sets the divisor.
+	 *
+	 * @param integer $divisor
+	 *
+	 * @return void
 	 */
 	public function setDivisor($divisor) {
 		$this->divisor = $divisor;
 	}
 
 	/**
-	 * @return int
+	 * Gets the divisor.
+	 *
+	 * @return integer
 	 */
 	public function getDivisor() {
 		return $this->divisor;
 	}
 
 	/**
+	 * Sets the ISO alpha-3 code.
+	 *
 	 * @param string $isoCodeA3
+	 *
+	 * @return void
 	 */
 	public function setIsoCodeA3($isoCodeA3) {
 		$this->isoCodeA3 = $isoCodeA3;
 	}
 
 	/**
+	 * Gets the ISO alpha-3 code.
+	 *
 	 * @return string
 	 */
 	public function getIsoCodeA3() {
@@ -135,27 +153,39 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * @param int $isoCodeNumber
+	 * Sets the ISO code number.
+	 *
+	 * @param integer $isoCodeNumber
+	 *
+	 * @return void
 	 */
 	public function setIsoCodeNumber($isoCodeNumber) {
 		$this->isoCodeNumber = $isoCodeNumber;
 	}
 
 	/**
-	 * @return int
+	 * Gets the ISO code number.
+	 *
+	 * @return integer
 	 */
 	public function getIsoCodeNumber() {
 		return $this->isoCodeNumber;
 	}
 
 	/**
+	 * Sets the name.
+	 *
 	 * @param string $name
+	 *
+	 * @return void
 	 */
 	public function setName($name) {
 		$this->name = $name;
 	}
 
 	/**
+	 * Gets the name.
+	 *
 	 * @return string
 	 */
 	public function getName() {
@@ -163,13 +193,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the sub-name.
+	 *
 	 * @param string $subName
+	 *
+	 * @return void
 	 */
 	public function setSubName($subName) {
 		$this->subName = $subName;
 	}
 
 	/**
+	 * Gets the sub-name.
+	 *
 	 * @return string
 	 */
 	public function getSubName() {
@@ -177,13 +213,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the sub-symbol for the left-hand side.
+	 *
 	 * @param string $subSymbolLeft
+	 *
+	 * @return void
 	 */
 	public function setSubSymbolLeft($subSymbolLeft) {
 		$this->subSymbolLeft = $subSymbolLeft;
 	}
 
 	/**
+	 * Gets the sub-symbol for the left-hand side.
+	 *
 	 * @return string
 	 */
 	public function getSubSymbolLeft() {
@@ -191,13 +233,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the sub-symbol for the right-hand side.
+	 *
 	 * @param string $subSymbolRight
+	 *
+	 * @return void
 	 */
 	public function setSubSymbolRight($subSymbolRight) {
 		$this->subSymbolRight = $subSymbolRight;
 	}
 
 	/**
+	 * Gets the sub-symbol for the right-hand side.
+	 *
 	 * @return string
 	 */
 	public function getSubSymbolRight() {
@@ -205,13 +253,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the symbol for the left-hand side.
+	 *
 	 * @param string $symbolLeft
+	 *
+	 * @return void
 	 */
 	public function setSymbolLeft($symbolLeft) {
 		$this->symbolLeft = $symbolLeft;
 	}
 
 	/**
+	 * Gets the symbol for the left-hand side.
+	 *
 	 * @return string
 	 */
 	public function getSymbolLeft() {
@@ -219,13 +273,19 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
+	 * Sets the symbol for the right-hand side.
+	 *
 	 * @param string $symbolRight
+	 *
+	 * @return void
 	 */
 	public function setSymbolRight($symbolRight) {
 		$this->symbolRight = $symbolRight;
 	}
 
 	/**
+	 * Gets the symbol for the right-hand side.
+	 *
 	 * @return string
 	 */
 	public function getSymbolRight() {
@@ -233,27 +293,39 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * @param int $decimalDigits
+	 * Sets the number of decimal digits.
+	 *
+	 * @param integer $decimalDigits
+	 *
+	 * @return void
 	 */
 	public function setDecimalDigits($decimalDigits) {
 		$this->decimalDigits = $decimalDigits;
 	}
 
 	/**
-	 * @return int
+	 * Gets the number of decimal digits.
+	 *
+	 * @return integer
 	 */
 	public function getDecimalDigits() {
 		return $this->decimalDigits;
 	}
 
 	/**
+	 * Sets the decimal point.
+	 *
 	 * @param string $decimalPoint
+	 *
+	 * @return void
 	 */
 	public function setDecimalPoint($decimalPoint) {
 		$this->decimalPoint = $decimalPoint;
 	}
 
 	/**
+	 * Gets the decimal point.
+	 *
 	 * @return string
 	 */
 	public function getDecimalPoint() {
