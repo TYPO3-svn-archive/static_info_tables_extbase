@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
+*  (c) 2011-2014 Armin Ruediger Vieweg <armin@v.ieweg.de>
 *
 *  All rights reserved
 *
@@ -41,6 +41,11 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone extends Tx_Extba
 	protected $name = '';
 
 	/**
+	 * @var string
+	 */
+	protected $nameDe = '';
+
+	/**
 	 * Country zone code as string
 	 * @var string ISO 3166-2 Country Zone code
 	 */
@@ -65,19 +70,14 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone extends Tx_Extba
 	protected $countryIsoCodeA3 = '';
 
 	/**
-	 * Sets the name.
-	 *
 	 * @param string $name
-	 *
-	 * @return void
 	 */
 	public function setName($name) {
 		$this->name = $name;
 	}
 
 	/**
-	 * Returns name. If empty returns the localName.
-	 *
+	 * Returns name. If empty returns the localName
 	 * @return string
 	 */
 	public function getName() {
@@ -88,19 +88,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone extends Tx_Extba
 	}
 
 	/**
-	 * Sets the ISO alpha-2 code.
-	 *
 	 * @param string $countryIsoCodeA2
-	 *
-	 * @return void
 	 */
 	public function setCountryIsoCodeA2($countryIsoCodeA2) {
 		$this->countryIsoCodeA2 = $countryIsoCodeA2;
 	}
 
 	/**
-	 * Gets the ISO alpha-2 code.
-	 *
 	 * @return string
 	 */
 	public function getCountryIsoCodeA2() {
@@ -108,19 +102,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone extends Tx_Extba
 	}
 
 	/**
-	 * Sets the ISO alpha-3 code.
-	 *
 	 * @param string $countryIsoCodeA3
-	 *
-	 * @return void
 	 */
 	public function setCountryIsoCodeA3($countryIsoCodeA3) {
 		$this->countryIsoCodeA3 = $countryIsoCodeA3;
 	}
 
 	/**
-	 * Gets the ISO alpha-2 code.
-	 *
 	 * @return string
 	 */
 	public function getCountryIsoCodeA3() {
@@ -128,19 +116,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone extends Tx_Extba
 	}
 
 	/**
-	 * Sets the county ISO code number.
-	 *
 	 * @param integer $countryIsoCodeNumber
-	 *
-	 * @return void
 	 */
 	public function setCountryIsoCodeNumber($countryIsoCodeNumber) {
 		$this->countryIsoCodeNumber = $countryIsoCodeNumber;
 	}
 
 	/**
-	 * Gets the county ISO code number.
-	 *
 	 * @return integer
 	 */
 	public function getCountryIsoCodeNumber() {
@@ -148,19 +130,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone extends Tx_Extba
 	}
 
 	/**
-	 * Sets the ISO code.
-	 *
 	 * @param string $isoCode
-	 *
-	 * @return void
 	 */
 	public function setIsoCode($isoCode) {
 		$this->isoCode = $isoCode;
 	}
 
 	/**
-	 * Gets the ISO code.
-	 *
 	 * @return string
 	 */
 	public function getIsoCode() {
@@ -168,23 +144,31 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountryZone extends Tx_Extba
 	}
 
 	/**
-	 * Sets the local name.
-	 *
 	 * @param string $localName
-	 *
-	 * @return void
 	 */
 	public function setLocalName($localName) {
 		$this->localName = $localName;
 	}
 
 	/**
-	 * Gets the local name.
-	 *
 	 * @return string
 	 */
 	public function getLocalName() {
 		return $this->localName;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getNameDe() {
+		return $this->nameDe;
+	}
+
+	/**
+	 * @param string $nameDe
+	 */
+	public function setNameDe($nameDe) {
+		$this->nameDe = $nameDe;
 	}
 }
 ?>

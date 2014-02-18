@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Static Info Tables for Extbase',
-	'description' => 'Provides models and repositories to use the static info tables in extbase and fluid.',
+	'description' => 'Provides models and repositories to use the static info tables in extbase and fluid for TYPO3 4.x',
 	'category' => 'misc',
 	'shy' => 0,
 	'version' => '1.1.0',
@@ -28,16 +28,13 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearcacheonload' => 0,
 	'lockType' => '',
 	'author' => 'Armin Ruediger Vieweg',
-	'author_email' => 'info@professorweb.de',
-	'author_company' => 'Professor Web',
+	'author_email' => 'armin@v.ieweg.de',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '4.5.0-6.0.99',
-			'extbase' => '1.3.0-0.0.0',
-			'fluid' => '1.3.0-0.0.0',
-			'static_info_tables' => '2.0.0-0.0.0',
+			'typo3' => '4.5.0-4.7.99',
+			'static_info_tables' => '2.0.0-2.99.99',
 		),
 		'conflicts' => array(
 		),

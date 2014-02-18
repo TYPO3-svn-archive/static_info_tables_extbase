@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
+*  (c) 2011-2014 Armin Ruediger Vieweg <armin@v.ieweg.de>
 *
 *  All rights reserved
 *
@@ -34,6 +34,11 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	 * @var string
 	 */
 	protected $name = '';
+
+	/**
+	 * @var string
+	 */
+	protected $nameDe = '';
 
 	/**
 	 * Currency code as number
@@ -75,6 +80,11 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	/**
 	 * @var string
 	 */
+	protected $subNameDe = '';
+
+	/**
+	 * @var string
+	 */
 	protected $subSymbolLeft = '';
 
 	/**
@@ -93,19 +103,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	protected $divisor = 0;
 
 	/**
-	 * Sets the thousands point/separator.
-	 *
 	 * @param string $thousandsPoint
-	 *
-	 * @return void
 	 */
 	public function setThousandsPoint($thousandsPoint) {
 		$this->thousandsPoint = $thousandsPoint;
 	}
 
 	/**
-	 * Gets the thousands point/separator.
-	 *
 	 * @return string
 	 */
 	public function getThousandsPoint() {
@@ -113,39 +117,27 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the divisor.
-	 *
-	 * @param integer $divisor
-	 *
-	 * @return void
+	 * @param int $divisor
 	 */
 	public function setDivisor($divisor) {
 		$this->divisor = $divisor;
 	}
 
 	/**
-	 * Gets the divisor.
-	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function getDivisor() {
 		return $this->divisor;
 	}
 
 	/**
-	 * Sets the ISO alpha-3 code.
-	 *
 	 * @param string $isoCodeA3
-	 *
-	 * @return void
 	 */
 	public function setIsoCodeA3($isoCodeA3) {
 		$this->isoCodeA3 = $isoCodeA3;
 	}
 
 	/**
-	 * Gets the ISO alpha-3 code.
-	 *
 	 * @return string
 	 */
 	public function getIsoCodeA3() {
@@ -153,39 +145,27 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the ISO code number.
-	 *
-	 * @param integer $isoCodeNumber
-	 *
-	 * @return void
+	 * @param int $isoCodeNumber
 	 */
 	public function setIsoCodeNumber($isoCodeNumber) {
 		$this->isoCodeNumber = $isoCodeNumber;
 	}
 
 	/**
-	 * Gets the ISO code number.
-	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function getIsoCodeNumber() {
 		return $this->isoCodeNumber;
 	}
 
 	/**
-	 * Sets the name.
-	 *
 	 * @param string $name
-	 *
-	 * @return void
 	 */
 	public function setName($name) {
 		$this->name = $name;
 	}
 
 	/**
-	 * Gets the name.
-	 *
 	 * @return string
 	 */
 	public function getName() {
@@ -193,19 +173,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the sub-name.
-	 *
 	 * @param string $subName
-	 *
-	 * @return void
 	 */
 	public function setSubName($subName) {
 		$this->subName = $subName;
 	}
 
 	/**
-	 * Gets the sub-name.
-	 *
 	 * @return string
 	 */
 	public function getSubName() {
@@ -213,19 +187,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the sub-symbol for the left-hand side.
-	 *
 	 * @param string $subSymbolLeft
-	 *
-	 * @return void
 	 */
 	public function setSubSymbolLeft($subSymbolLeft) {
 		$this->subSymbolLeft = $subSymbolLeft;
 	}
 
 	/**
-	 * Gets the sub-symbol for the left-hand side.
-	 *
 	 * @return string
 	 */
 	public function getSubSymbolLeft() {
@@ -233,19 +201,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the sub-symbol for the right-hand side.
-	 *
 	 * @param string $subSymbolRight
-	 *
-	 * @return void
 	 */
 	public function setSubSymbolRight($subSymbolRight) {
 		$this->subSymbolRight = $subSymbolRight;
 	}
 
 	/**
-	 * Gets the sub-symbol for the right-hand side.
-	 *
 	 * @return string
 	 */
 	public function getSubSymbolRight() {
@@ -253,19 +215,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the symbol for the left-hand side.
-	 *
 	 * @param string $symbolLeft
-	 *
-	 * @return void
 	 */
 	public function setSymbolLeft($symbolLeft) {
 		$this->symbolLeft = $symbolLeft;
 	}
 
 	/**
-	 * Gets the symbol for the left-hand side.
-	 *
 	 * @return string
 	 */
 	public function getSymbolLeft() {
@@ -273,19 +229,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the symbol for the right-hand side.
-	 *
 	 * @param string $symbolRight
-	 *
-	 * @return void
 	 */
 	public function setSymbolRight($symbolRight) {
 		$this->symbolRight = $symbolRight;
 	}
 
 	/**
-	 * Gets the symbol for the right-hand side.
-	 *
 	 * @return string
 	 */
 	public function getSymbolRight() {
@@ -293,43 +243,59 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCurrency extends Tx_Extbase_
 	}
 
 	/**
-	 * Sets the number of decimal digits.
-	 *
-	 * @param integer $decimalDigits
-	 *
-	 * @return void
+	 * @param int $decimalDigits
 	 */
 	public function setDecimalDigits($decimalDigits) {
 		$this->decimalDigits = $decimalDigits;
 	}
 
 	/**
-	 * Gets the number of decimal digits.
-	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function getDecimalDigits() {
 		return $this->decimalDigits;
 	}
 
 	/**
-	 * Sets the decimal point.
-	 *
 	 * @param string $decimalPoint
-	 *
-	 * @return void
 	 */
 	public function setDecimalPoint($decimalPoint) {
 		$this->decimalPoint = $decimalPoint;
 	}
 
 	/**
-	 * Gets the decimal point.
-	 *
 	 * @return string
 	 */
 	public function getDecimalPoint() {
 		return $this->decimalPoint;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getNameDe() {
+		return $this->nameDe;
+	}
+
+	/**
+	 * @param string $nameDe
+	 */
+	public function setNameDe($nameDe) {
+		$this->nameDe = $nameDe;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getSubNameDe() {
+		return $this->subNameDe;
+	}
+
+	/**
+	 * @param string $subNameDe
+	 */
+	public function setSubNameDe($subNameDe) {
+		$this->subNameDe = $subNameDe;
 	}
 }
 ?>

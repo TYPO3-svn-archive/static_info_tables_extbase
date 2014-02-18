@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
+*  (c) 2011-2014 Armin Ruediger Vieweg <armin@v.ieweg.de>
 *
 *  All rights reserved
 *
@@ -39,6 +39,11 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	 * @var string
 	 */
 	protected $shortNameLocal = '';
+
+	/**
+	 * @var string
+	 */
+	protected $shortNameDe = '';
 
 	/**
 	 * @var string
@@ -122,19 +127,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 
 
 	/**
-	 * Sets the address format.
-	 *
 	 * @param string $addressFormat
-	 *
-	 * @return void
 	 */
 	public function setAddressFormat($addressFormat) {
 		$this->addressFormat = $addressFormat;
 	}
 
 	/**
-	 * Gets the address format.
-	 *
 	 * @return string
 	 */
 	public function getAddressFormat() {
@@ -142,19 +141,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the name of the capital.
-	 *
 	 * @param string $capital
-	 *
-	 * @return void
 	 */
 	public function setCapital($capital) {
 		$this->capital = $capital;
 	}
 
 	/**
-	 * Gets the name of the capital.
-	 *
 	 * @return string
 	 */
 	public function getCapital() {
@@ -162,19 +155,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the currency code.
-	 *
 	 * @param string $currencyCode
-	 *
-	 * @return void
 	 */
 	public function setCurrencyCode($currencyCode) {
 		$this->currencyCode = $currencyCode;
 	}
 
 	/**
-	 * Gets the currency code.
-	 *
 	 * @return string
 	 */
 	public function getCurrencyCode() {
@@ -182,39 +169,27 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the currency code number.
-	 *
-	 * @param integer $currencyCodeNumber
-	 *
-	 * @return void
+	 * @param int $currencyCodeNumber
 	 */
 	public function setCurrencyCodeNumber($currencyCodeNumber) {
 		$this->currencyCodeNumber = $currencyCodeNumber;
 	}
 
 	/**
-	 * Gets the currency code number.
-	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function getCurrencyCodeNumber() {
 		return $this->currencyCodeNumber;
 	}
 
 	/**
-	 * Sets whether this country is a member of the European Union.
-	 *
 	 * @param boolean $euMember
-	 *
-	 * @return void
 	 */
 	public function setEuMember($euMember) {
 		$this->euMember = $euMember;
 	}
 
 	/**
-	 * Gets whether this country is a member of the European Union.
-	 *
 	 * @return boolean
 	 */
 	public function getEuMember() {
@@ -222,9 +197,7 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Gets whether this country is a member of the European Union.
-	 *
-	 * This method is a synonym for the getEuMember method.
+	 * Synonym for getEuMember method
 	 *
 	 * @return boolean
 	 */
@@ -233,19 +206,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the ISO alpha-2 code.
-	 *
 	 * @param string $isoCodeA2
-	 *
-	 * @return void
 	 */
 	public function setIsoCodeA2($isoCodeA2) {
 		$this->isoCodeA2 = $isoCodeA2;
 	}
 
 	/**
-	 * Gets the ISO alpha-2 code.
-	 *
 	 * @return string
 	 */
 	public function getIsoCodeA2() {
@@ -253,19 +220,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the ISO alpha-3 code.
-	 *
 	 * @param string $isoCodeA3
-	 *
-	 * @return void
 	 */
 	public function setIsoCodeA3($isoCodeA3) {
 		$this->isoCodeA3 = $isoCodeA3;
 	}
 
 	/**
-	 * Gets the ISO alpha-3 code.
-	 *
 	 * @return string
 	 */
 	public function getIsoCodeA3() {
@@ -273,39 +234,27 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the ISO code number.
-	 *
-	 * @param integer $isoCodeNumber
-	 *
-	 * @return void
+	 * @param int $isoCodeNumber
 	 */
 	public function setIsoCodeNumber($isoCodeNumber) {
 		$this->isoCodeNumber = $isoCodeNumber;
 	}
 
 	/**
-	 * Gets the ISO code number.
-	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function getIsoCodeNumber() {
 		return $this->isoCodeNumber;
 	}
 
 	/**
-	 * Sets the official name.
-	 *
 	 * @param string $officialName
-	 *
-	 * @return void
 	 */
 	public function setOfficialName($officialName) {
 		$this->officialName = $officialName;
 	}
 
 	/**
-	 * Gets the official name.
-	 *
 	 * @return string
 	 */
 	public function getOfficialName() {
@@ -313,19 +262,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the official local name.
-	 *
 	 * @param string $officialNameLocal
-	 *
-	 * @return void
 	 */
 	public function setOfficialNameLocal($officialNameLocal) {
 		$this->officialNameLocal = $officialNameLocal;
 	}
 
 	/**
-	 * Gets the official local name.
-	 *
 	 * @return string
 	 */
 	public function getOfficialNameLocal() {
@@ -333,59 +276,41 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the parent territory code.
-	 *
-	 * @param integer $parentTerritoryCode
-	 *
-	 * @return void
+	 * @param int $parentTerritoryCode
 	 */
 	public function setParentTerritoryCode($parentTerritoryCode) {
 		$this->parentTerritoryCode = $parentTerritoryCode;
 	}
 
 	/**
-	 * Gets the parent territory code.
-	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function getParentTerritoryCode() {
 		return $this->parentTerritoryCode;
 	}
 
 	/**
-	 * Sets the phone prefix.
-	 *
-	 * @param integer $phonePrefix
-	 *
-	 * @return void
+	 * @param int $phonePrefix
 	 */
 	public function setPhonePrefix($phonePrefix) {
 		$this->phonePrefix = $phonePrefix;
 	}
 
 	/**
-	 * Gets the phone prefix.
-	 *
-	 * @return integer
+	 * @return int
 	 */
 	public function getPhonePrefix() {
 		return $this->phonePrefix;
 	}
 
 	/**
-	 * Sets the short name.
-	 *
 	 * @param string $shortName
-	 *
-	 * @return void
 	 */
 	public function setShortName($shortName) {
 		$this->shortName = $shortName;
 	}
 
 	/**
-	 * Gets the short name.
-	 *
 	 * @return string
 	 */
 	public function getShortName() {
@@ -393,19 +318,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the short local name.
-	 *
 	 * @param string $shortNameLocal
-	 *
-	 * @return void
 	 */
 	public function setShortNameLocal($shortNameLocal) {
 		$this->shortNameLocal = $shortNameLocal;
 	}
 
 	/**
-	 * Gets the short local name.
-	 *
 	 * @return string
 	 */
 	public function getShortNameLocal() {
@@ -413,19 +332,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the top-level domain.
-	 *
 	 * @param string $topLevelDomain
-	 *
-	 * @return void
 	 */
 	public function setTopLevelDomain($topLevelDomain) {
 		$this->topLevelDomain = $topLevelDomain;
 	}
 
 	/**
-	 * Gets the top-level domain.
-	 *
 	 * @return string
 	 */
 	public function getTopLevelDomain() {
@@ -433,19 +346,13 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets whether this country is a member of the United Nations.
-	 *
 	 * @param boolean $unMember
-	 *
-	 * @return void
 	 */
 	public function setUnMember($unMember) {
 		$this->unMember = $unMember;
 	}
 
 	/**
-	 * Gets whether this country is a member of the United Nations.
-	 *
 	 * @return boolean
 	 */
 	public function getUnMember() {
@@ -453,9 +360,7 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets whether this country is a member of the United Nations.
-	 *
-	 * This method is a synonym for the getUnMember method.
+	 * Synonym for getUnMember method
 	 *
 	 * @return boolean
 	 */
@@ -464,23 +369,31 @@ class Tx_StaticInfoTablesExtbase_Domain_Model_StaticCountry extends Tx_Extbase_D
 	}
 
 	/**
-	 * Sets the zone flag.
-	 *
 	 * @param boolean $zoneFlag
-	 *
-	 * @return void
 	 */
 	public function setZoneFlag($zoneFlag) {
 		$this->zoneFlag = $zoneFlag;
 	}
 
 	/**
-	 * Gets the zone flag.
-	 *
 	 * @return boolean
 	 */
 	public function getZoneFlag() {
 		return $this->zoneFlag;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getShortNameDe() {
+		return $this->shortNameDe;
+	}
+
+	/**
+	 * @param string $shortNameDe
+	 */
+	public function setShortNameDe($shortNameDe) {
+		$this->shortNameDe = $shortNameDe;
 	}
 }
 ?>
